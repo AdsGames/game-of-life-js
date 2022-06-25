@@ -13,9 +13,6 @@ Conway's Game of Life implementation in Typescript using Phaser 3
 
 [![image](https://user-images.githubusercontent.com/9920336/175782465-8d6a2589-9931-4c86-9435-ac2b0964d81e.png)](https://alegemaate.com/game-of-life-js/)
 
-
-
-
 ## Running
 
 Simply run
