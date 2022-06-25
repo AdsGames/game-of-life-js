@@ -1,7 +1,8 @@
-const { merge } = require("webpack-merge");
-const base = require("./base");
+import { merge } from "webpack-merge";
 
-module.exports = merge(base, {
+import base from "./base";
+
+const config = merge(base, {
   mode: "production",
   performance: {
     maxEntrypointSize: 512000,
@@ -13,3 +14,5 @@ module.exports = merge(base, {
     },
   },
 });
+
+export default config;
