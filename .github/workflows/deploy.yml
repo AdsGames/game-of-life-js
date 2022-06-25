@@ -1,9 +1,6 @@
 name: Build Game
 
-on:
-  push:
-    branches:
-      - master
+on: pull_request
 
 jobs:
   build:
@@ -18,6 +15,9 @@ jobs:
         with:
           node-version: 14
           cache: "yarn"
+
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
 
       - name: Build project
         run: yarn build
