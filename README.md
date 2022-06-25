@@ -1,6 +1,6 @@
 # game-of-life-js
 
-![Build Game](https://github.com/alegemaate/GameOfLifeJS/workflows/Build%20Game/badge.svg)
+[![Deploy Game](https://github.com/alegemaate/game-of-life-js/actions/workflows/deploy.yml/badge.svg)](https://github.com/alegemaate/game-of-life-js/actions/workflows/deploy.yml)
 [![Maintainability](https://api.codeclimate.com/v1/badges/b2d9db9d79176398a535/maintainability)](https://codeclimate.com/github/alegemaate/GameOfLifeJS/maintainability)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=alegemaate_game-of-life-js&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=alegemaate_game-of-life-js)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=alegemaate_game-of-life-js&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=alegemaate_game-of-life-js)
