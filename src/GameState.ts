@@ -38,8 +38,8 @@ export default class GameState extends Phaser.Scene {
   public create(): void {
     // Game state variables
     this.pausedText = this.add
-      .text(10, 10, "PAUSED - Press the P", {
-        fill: "#ffffff",
+      .text(10, 10, "PAUSED - Press the space bar to resume", {
+        color: "#ffffff",
         font: "16px Courier",
       })
       .setShadow(1, 1);
@@ -60,7 +60,7 @@ export default class GameState extends Phaser.Scene {
     this.input.keyboard.on(
       "keydown",
       (event: Phaser.Input.Keyboard.Key) => {
-        if (event.keyCode === Phaser.Input.Keyboard.KeyCodes.P) {
+        if (event.keyCode === Phaser.Input.Keyboard.KeyCodes.SPACE) {
           this.togglePlay();
         }
       },
@@ -168,9 +168,9 @@ export default class GameState extends Phaser.Scene {
     this.paused = !this.paused;
 
     if (this.paused) {
-      this.pausedText.text = "PAUSED - Press P to play";
+      this.pausedText.text = "PAUSED - Press the space bar to resume";
     } else {
-      this.pausedText.text = "PLAYING - Press P to pause";
+      this.pausedText.text = "PLAYING - Press the space bar to pause";
     }
   }
 }

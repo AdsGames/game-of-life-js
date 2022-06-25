@@ -10,7 +10,7 @@ Conway's Game of Life implementation in Typescript using Phaser 3
 
 ## Running
 
-Simply run 
+Simply run
 
 - `yarn`
 - `yarn start`

@@ -21,5 +21,8 @@ jobs:
       - name: Lint project
         run: yarn lint
 
+      - name: Check format of project
+        run: yarn format:check
+
       - name: Build project
         run: yarn build

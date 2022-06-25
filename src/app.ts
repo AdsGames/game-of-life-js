@@ -6,9 +6,7 @@ const config: Phaser.Types.Core.GameConfig = {
   backgroundColor: "#000",
   height: 600,
   parent: "game-container",
-  scene: [
-    GameState
-  ],
+  scene: [GameState],
   type: Phaser.AUTO,
   width: 600,
 };
