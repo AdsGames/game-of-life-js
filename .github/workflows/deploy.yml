@@ -1,4 +1,4 @@
-name: Build Game
+name: Deploy Game
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,6 +19,9 @@ jobs:
           node-version: 14
           cache: "yarn"
 
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
+
       - name: Build project
         run: yarn build
 
@@ -27,3 +30,4 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
+          single-commit: true
