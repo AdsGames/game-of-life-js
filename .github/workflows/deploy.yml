@@ -1,6 +1,9 @@
 name: Deploy Game
 
-on: pull_request
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   deploy:
@@ -27,3 +30,4 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
+          single-commit: true
